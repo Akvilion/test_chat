@@ -1,0 +1,456 @@
+{
+	"info": {
+		"_postman_id": "1d839be0-6705-4c43-ab7b-0f07259021c8",
+		"name": "iSi Technology",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "retrieving a number of unread messages for the user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/unread_count/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						"unread_count",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieving message by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieving all messages",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "marking the message as read",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/5/mark_read/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						"5",
+						"mark_read",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create message",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"sender\": 4, \"text\": \"zzzzzzzzzzzzzzzzz\", \"thread\": 2}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/create/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete thread by id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/threads/5/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"threads",
+						"5",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all threads",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/threads/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"threads",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieving message list for the thread",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/messages/thread/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"messages",
+						"thread",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retrieving the list of threads for any user",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/threads/user/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"threads",
+						"user",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"111\",\r\n    \"password\": \"fef3f2g23@fwe\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "refresh token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"refresh\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY4MTM3MDg1NywiaWF0IjoxNjgxMjg0NDU3LCJqdGkiOiIwZGQ3NmVmNjA0YTE0YmNmOTRkM2ZiN2U1Y2QwMmE0NyIsInVzZXJfaWQiOjJ9.VuacVBiceNe604XG2NlEteLt3QQoIEogci7jMdUgrPs\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/token/refresh/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"token",
+						"refresh",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create of get thread",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjgxMjk0NTI1LCJpYXQiOjE2ODEyOTA5MjUsImp0aSI6IjQ4NzM4ZmI1MjZlNTQxYTViMGQzNzkxNjNlNzE3N2NhIiwidXNlcl9pZCI6NX0.GeiTfSrMkXHWRI0DB6fYVDyyrqGQBPmrsVtJxbJxmKg",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"participants\": [5, 6]}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/chat/threads/create_or_get/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"chat",
+						"threads",
+						"create_or_get",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
